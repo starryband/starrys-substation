@@ -18,6 +18,11 @@ module.exports = async function handler(request, response) {
             modded: server.modded
         });
 
+        console.log(response.json)
+        
+        const element = document.getElementById('active_players');
+        element.innerHTML = response.json.players;
+
     } catch (err) {
         response.status(500).json({ online: false });
     }

@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starry's Substation</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Starry's Substation</h1>
-    <a href="/api/auth/discord">Login with Discord</a>
+    <nav class="navbar">
+        <div class="nav_left">
+            <img src="img/logo.png" alt="Server logo" class="logo">
+            <span class="server-name">Starry's Substation</span>
+        </div>
+        <div class="nav_right">
+            <a href="/api/auth/discord" class="login-button">Login with Discord</a>
+        </div>
+    </nav>
+    <main class="banner">
+        <h1>Welcome to Starry's Substation</h1>
+        <p>A pure Vanilla+ experience for all SCP: SL players.</p>
+        <br/>
+        <br/>
+        <a href="https://discord.gg/GxDQ5KfwEp" class="join-button">Join our Discord</a>
+    </main>
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stats-header">
+                <h2>Global Server Statistics</h2>
+                <p>View all-time data for the server's performance and activity.</p>
+            </div>
+
+            <div class="stats-main">
+                <div class="stat-card">
+                    <div class="server-top">
+                        <span class="dot online-dot"></span>
+                        <span class="status-text">Online</span>
+                    </div>
+
+                    <h3>Main Server</h3>
+
+                    <div class="status-info">
+                        <div class="info-box">
+                            <span>Total Unique Players</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>Total Unique Players</span>
+                            <strong>0</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

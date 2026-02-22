@@ -11,7 +11,7 @@ module.exports = async function handler(request, response) {
         client_secret: process.env.DISCORD_CLIENT_SECRET,
         grant_type: 'authorization_code',
         code,
-        redirect_uri: 'https://starrys-substation.vercel.app/auth/redirect',
+        redirect_uri: 'https://starrys-substation.vercel.app/api/auth/redirect',
         scope: 'identify connections'
     });
 

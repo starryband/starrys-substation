@@ -1,7 +1,6 @@
-import axios from 'axios';
-import { use } from 'react';
+const axios = require('axios');
 
-export default async function(request, response) {
+module.exports = async function handler(request, response) {
     const code = request.query.code;
     if (!code) {
         return response.status(400).send("Invalid or no code provided");

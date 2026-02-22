@@ -3,7 +3,7 @@ module.exports = async function handler(request, response) {
     const client_id = process.env.DISCORD_CLIENT_ID;
     const scope = encodeURIComponent('identify connections');
 
-    const oauth_url = process.env.DISCORD_REDIRECT;
+    const oauth_url = process.env.DISCORD_REDIRECT_URL;
 
     response.writeHead(302, {
         Location: oauth_url

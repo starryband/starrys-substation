@@ -1,5 +1,5 @@
 module.exports = async function handler(request, response) {
-    const redirect_uri = encodeURIComponent('https://starrys-substation.vercel.app/api/auth/discord/callback');
+    const redirect_uri = encodeURIComponent('https://starrys-substation.vercel.app/api/auth/callback');
     const client_id = process.env.DISCORD_CLIENT_ID;
     const scope = encodeURIComponent('identify connections');
 

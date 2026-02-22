@@ -22,6 +22,7 @@ module.exports = async function handler(request, response) {
         console.log(payload);
 
     } catch (err) {
+        console.error(err);
         response.status(500).json({ online: false });
     }
 }

@@ -11,15 +11,16 @@ module.exports = async function handler(request, response) {
             return response.json({ online: false });
         }
 
-        response.json({
+        const payload = {
             online: true,
             players: server.players,
             version: server.version,
             modded: server.modded
-        });
+        }
 
-        console.log(response.json)
-        
+        response.json(payload);
+        console.log(payload);
+
         const element = document.getElementById('active_players');
         element.innerHTML = response.json.players;
 

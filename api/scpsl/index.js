@@ -1,5 +1,7 @@
 module.exports = async function handler(request, response) {
     try {
+        console.log("Trying...");
+
         const server_response = await fetch("https://servers.scpslgame.com/");
         const data = await server_response.json();
 
@@ -8,6 +10,7 @@ module.exports = async function handler(request, response) {
         );
 
         if (!server) {
+            console.log("No server found");
             return response.json({ online: false });
         }
 
@@ -22,6 +25,7 @@ module.exports = async function handler(request, response) {
         console.log(payload);
 
     } catch (err) {
+        console.log("Exception");
         console.error(err);
         response.status(500).json({ online: false });
     }
